@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.box-wrapper {
+background-color: white;
+}
+
+.box {
+width: 400px;
+background-color: aliceblue;
+padding: 20px;
+position: relative;
+}
+
+.box::after {
+content: "";
+width: 80px;
+height: 80px;
+background-color: red;
+position: absolute;
+top: -40px;
+left: -90px;
+border-radius: 100%;
+background-image: url(./young-bearded-man-with-striped-shirt_273609-5677.avif);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.box::before {
+content: "";
+position: absolute;
+border-top: 10px solid aliceblue;
+border-left: 10px solid transparent;
+border-right: 10px solid aliceblue;
+border-bottom: 10px solid transparent;
+left: -17px;
+
+}
